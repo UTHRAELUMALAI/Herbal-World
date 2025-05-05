@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Herbal World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0ffe0, #f0fff4);
+      color: #2e4730;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #88c999;
+      color: white;
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px #2e4730;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .card {
+      background-color: #ffffffdd;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 30px 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .emoji {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .herbs { background: linear-gradient(to bottom, #c2f0c2, #eaffea); }
+    .flowers { background: linear-gradient(to bottom, #ffd6e0, #fff0f5); }
+    .roots { background: linear-gradient(to bottom, #fbe8a6, #fff8dc); }
+    .seeds { background: linear-gradient(to bottom, #fceabb, #f8b500); }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🌿 Welcome to Herbal World 🌼</header>
+
+  <div class="container">
+    <a href="leafy.html" class="card herbs">
+      <div class="emoji">🥬</div>
+      <h2>Leafy Herbs</h2>
+      <p>Explore the world of fresh and fragrant green herbs.</p>
+    </a>
+
+    <a href="flowers.html" class="card flowers">
+      <div class="emoji">🌸</div>
+      <h2>Flowers</h2>
+      <p>Colorful petals with beauty and healing properties.</p>
+    </a>
+
+    
+
+    <a href="seeds.html" class="card seeds">
+      <div class="emoji">🌰</div>
+      <h2>Seeds</h2>
+      <p>Power-packed natural wonders for health and flavor.</p>
+    </a>
+  </div>
+
+  <footer>© 2025 Herbal World by Uthra</footer>
+
+</body>
+</html>

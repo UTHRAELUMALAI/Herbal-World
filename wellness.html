@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wellness Tips</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      color: #2e7d32;
+    }
+    h1 {
+      text-align: center;
+      color: #1b5e20;
+      font-size: 3em;
+    }
+    .logo {
+      text-align: center;
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .tip {
+      background-color: #ffffffcc;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 18px;
+      max-width: 900px;
+      box-shadow: 0 6px 12px rgba(76, 175, 80, 0.2);
+    }
+    .tip h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .image-box {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .image-box img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    .show-btn {
+      background-color: #43a047;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .benefit {
+      display: none;
+      margin-top: 15px;
+      font-size: 1.1em;
+      line-height: 1.7;
+      font-weight: bold;
+      color: #1a4d27;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+      color: #2e7d32;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">🍃🧘‍♀️</div>
+  <h1>Wellness Tips</h1>
+
+  <div class="tip">
+    <h2>Morning Lemon and Honey Elixir</h2>
+    <div class="image-box">
+      <img src="https://dontmesswithmama.com/wp-content/uploads/2016/09/ginger-honey-pin.jpg" style="width:300px;height:300px" alt="Lemon Honey Water">
+    </div>
+    <p>A simple mix of warm water, lemon juice, and honey each morning aids in detox and energy.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">This herbal tonic kickstarts digestion, flushes toxins from the liver, and alkalizes the body. Lemon is rich in vitamin C, promoting immunity and skin radiance, while honey acts as a natural antibacterial. It also balances pH levels and reduces acidity in the stomach. Taken regularly, it can help in weight management and improve your metabolism over time.</p>
+  </div>
+  
+  <div class="tip">
+    <h2>Turmeric Milk Before Bed</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.o7-xo_QP5XJTCvMOa2TLwwHaDe?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Turmeric Milk">
+    </div>
+    <p>Golden milk is a traditional bedtime drink for better sleep and immunity.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Turmeric contains curcumin, a powerful anti-inflammatory compound that helps soothe joints, improve liver function, and support brain health. Mixed with warm milk and black pepper (to enhance absorption), this drink reduces stress, aids in digestion, and promotes restorative sleep. It also strengthens respiratory health and reduces seasonal allergies.</p>
+  </div>
+  
+  <div class="tip">
+    <h2>Inhale Herbal Steam Weekly</h2>
+    <div class="image-box">
+      <img src="https://i.herbalreality.com/wp-content/uploads/2023/04/21123141/How-to-make-a-herbal-steam-inhalation-1200x775.jpg" style="width:300px;height:300px" alt="Herbal Steam">
+    </div>
+    <p>Steam infused with eucalyptus, mint, or tulsi clears respiratory pathways and rejuvenates skin.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Herbal steam opens pores, allowing deep cleansing of the skin while relaxing facial muscles. The aromatic vapors of eucalyptus or mint ease sinus congestion, colds, and allergies. Tulsi in steam helps clear toxins from your lungs and enhances oxygen intake. It also improves mental clarity and soothes stress-induced tension in the body.</p>
+  </div>
+  
+  <div class="tip">
+    <h2>Fenugreek Seeds Soaked Overnight</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.d41wVX97hPRrveERUiZIVAHaE8?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Fenugreek Seeds">
+    </div>
+    <p>Ayurvedic tradition praises soaked fenugreek for digestion and hormonal balance.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Soaked fenugreek (methi) seeds act as a powerful gut cleanser. They reduce bloating, improve metabolism, and regulate blood sugar levels. In women, fenugreek supports menstrual health and eases cramps. Its high fiber content also aids in weight loss and keeps cholesterol in check. The antioxidants fight inflammation and promote hair growth.</p>
+  </div>
+  
+  <div class="tip">
+    <h2>Foot Soak with Epsom Salt and Herbs</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.P9ZdFHlBDkg9o8IPSYCoigHaE8?w=299&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="width:300px;height:300px" alt="Herbal Foot Soak">
+    </div>
+    <p>Relaxing your feet with warm water and herbs soothes your nervous system and relieves fatigue.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">An herbal foot soak made with Epsom salt, lavender petals, or neem leaves helps ease muscle tension and improves sleep. The magnesium from Epsom salt gets absorbed through the skin, reducing inflammation. This simple ritual also improves blood circulation, refreshes tired feet, and helps draw out toxins through the soles.</p>
+  </div>
+
+  <div class="tip">
+    <h2>Use Aloe Vera Gel on Skin Daily</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.KGFEDMrcCWqOuttuVjVxNQHaEw?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Aloe Vera Skin">
+    </div>
+    <p>Aloe vera is a soothing herb that hydrates, heals, and protects your skin naturally.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Applying aloe vera gel daily can calm irritation, treat acne, and fade scars. It contains enzymes, vitamins, and minerals that accelerate skin regeneration. Aloe also helps lock in moisture without clogging pores. When applied to the scalp, it can reduce dandruff, soothe itching, and support hair growth.</p>
+  </div>
+  
+  <div class="tip">
+    <h2>Chew Neem Leaves Weekly</h2>
+    <div class="image-box">
+      <img src="https://c.ndtvimg.com/2019-10/qe94debo_neem-leaves-_625x300_11_October_19.jpg?im=FaceCrop,algorithm=dnn,width=650,height=400" style="width:300px;height:300px" alt="Neem Leaves">
+    </div>
+    <p>Neem is a bitter yet potent herbal cleanser used in Indian traditional medicine for centuries.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Chewing a few neem leaves helps purify the blood, detox the liver, and prevent skin eruptions. Neem has antibacterial, antifungal, and antiparasitic properties. It supports oral hygiene, controls acne, and can help regulate blood sugar. Just once a week is enough to boost overall immunity and maintain internal balance.</p>
+  </div>
+  
+  <div class="tip">
+    <h2>Oil Pulling with Coconut Oil</h2>
+    <div class="image-box">
+      <img src="https://i.ytimg.com/vi/Q74e5UVsj2U/maxresdefault.jpg" style="width:300px;height:300px" alt="Oil Pulling">
+    </div>
+    <p>This ancient Ayurvedic technique involves swishing oil in your mouth to draw out toxins.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Oil pulling strengthens gums, whitens teeth, and eliminates harmful bacteria from the mouth. Coconut oil is particularly effective due to its antimicrobial properties. This practice reduces bad breath, prevents cavities, and may even support sinus and throat health. When done daily, it contributes to better oral and overall detoxification.</p>
+  </div>
+  
+  <div class="tip">
+    <h2>Sip Cumin-Coriander-Fennel (CCF) Tea</h2>
+    <div class="image-box">
+      <img src="https://i.pinimg.com/736x/0d/8f/d2/0d8fd267255f24462c85549425f54de0.jpg" style="width:300px" alt="CCF Tea">
+    </div>
+    <p>CCF tea is a tri-dosha balancing Ayurvedic drink known for boosting digestion and metabolism.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">This simple tea made with cumin, coriander, and fennel seeds gently detoxifies the body and kindles digestive fire (Agni). It reduces bloating, relieves indigestion, and supports nutrient absorption. Fennel is also calming to the mind, while cumin helps in weight management. It’s caffeine-free and can be sipped warm throughout the day.</p>
+  </div>
+  
+  <script>
+    function toggleBenefit(button) {
+      const benefit = button.nextElementSibling;
+      benefit.style.display = benefit.style.display === 'block' ? 'none' : 'block';
+      button.textContent = benefit.style.display === 'block' ? 'Hide Benefit' : 'Show Benefit';
+    }
+  </script>
+
+</body>
+</html>

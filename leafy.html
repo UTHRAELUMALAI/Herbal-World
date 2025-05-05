@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leaves</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #d0f0c0, #b0e57c);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      color: #2e4e1f;
+    }
+    h1 {
+      text-align: center;
+      color: #225522;
+      font-size: 3em;
+    }
+    .logo {
+      text-align: center;
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .leaf {
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 6px 14px rgba(34, 85, 34, 0.2);
+    }
+    .leaf h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .image-box {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .image-box img {
+      width: 300px;
+      border-radius: 12px;
+    }
+    .show-btn {
+      background-color: #559c45;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .benefit {
+      display: none;
+      margin-top: 15px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+    /* Unique Backgrounds for Each Leaf Section */
+    .tulsi { background-color: #e5f9e0; }
+    .mint { background-color: #dfffe2; }
+    .neem { background-color: #f0fff0; }
+    .curry { background-color: #f5ffe8; }
+    .banana { background-color: #f9fbe7; }
+    .basil { background-color: #ecfdf5; }
+    .betel { background-color: #e6ffe6; }
+    .moringa { background-color: #edfced; }
+    .guava { background-color: #f3fff1; }
+    .aloe { background-color: #e1fcef; }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+      color: #2e4e1f;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">🍃🌿</div>
+  <h1>Leaves</h1>
+
+  <!-- Sample Leaf Block -->
+  <div class="leaf tulsi">
+    <h2>Tulsi (Holy Basil)</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.TGKdl82GEfmnWlasMd1g9wHaFj?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Tulsi Leaf">
+    </div>
+    <p>Sacred in Indian culture, Tulsi is known for its potent healing properties.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Tulsi enhances immunity, reduces inflammation, supports respiratory health, lowers stress levels, and purifies the blood. It is also known for regulating blood sugar and cholesterol levels and offers relief from cold and flu symptoms.</p>
+  </div>
+
+  <div class="leaf mint">
+    <h2>Mint</h2>
+    <div class="image-box">
+      <img src="https://www.littleyellowwheelbarrow.com/wp-content/uploads/2021/05/types-of-mint-1-2-scaled.jpg
+      " style="width:300px;height:300px" alt="Mint Leaf">
+    </div>
+    <p>Mint is aromatic and cooling, widely used in culinary and medicinal applications.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Mint aids digestion, alleviates nausea and headache, clears nasal congestion, improves oral hygiene, and has antibacterial and calming effects on the nervous system.</p>
+  </div>
+
+  <div class="leaf neem">
+    <h2>Neem</h2>
+    <div class="image-box">
+      <img src="https://static.toiimg.com/photo/68670559.cms" style="width:300px;height:300px" alt="Neem Leaf">
+    </div>
+    <p>Neem is a powerful antibacterial and antifungal herb used in Ayurvedic medicine.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Neem purifies the blood, heals skin conditions, controls diabetes, boosts liver health, fights parasites, reduces inflammation, and acts as a natural insect repellent.</p>
+  </div>
+
+  <div class="leaf curry">
+    <h2>Curry Leaves</h2>
+    <div class="image-box">
+      <img src="https://spiceography.com/wp-content/uploads/2019/12/cooking-with-curry-leaves.jpg" style="width:300px;height:300px" alt="Curry Leaves">
+    </div>
+    <p>Used in Indian cuisine for their aroma and health-boosting nutrients.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">They enhance digestion, reduce hair fall, control blood sugar, and improve iron absorption. Curry leaves are packed with vitamins A, B, C, and E and have strong antioxidant properties.</p>
+  </div>
+
+  <div class="leaf banana">
+    <h2>Banana Leaf</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.CcV3rs4YGN5rvlX1g3zR0gHaE8?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Banana Leaf">
+    </div>
+    <p>Traditional and eco-friendly, used as a food wrapper and plate.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Banana leaves contain polyphenols, promote digestion, prevent food contamination, and are environmentally sustainable. They enhance the flavor and aroma of food when steamed or served hot.</p>
+  </div>
+
+  <div class="leaf basil">
+    <h2>Sweet Basil</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.sjScElaLU0v4v4Pvc43ZegHaD4?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Basil Leaf">
+    </div>
+    <p>Basil is widely used in Mediterranean dishes and herbal medicine.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Basil supports cardiovascular health, improves digestion, reduces oxidative stress, and provides antibacterial benefits. It's also effective in reducing anxiety and mental fatigue.</p>
+  </div>
+
+  <div class="leaf betel">
+    <h2>Betel Leaf</h2>
+    <div class="image-box">
+      <img src="https://housing.com/news/wp-content/uploads/2022/11/BETEL-LEAF-FEATURE-compressed.jpg" style="width:300px;height:300px" alt="Betel Leaf">
+    </div>
+    <p>Traditionally used in rituals and as a mouth freshener in South Asia.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Betel leaves improve oral hygiene, stimulate digestion, reduce cough and cold symptoms, heal wounds, and are believed to have aphrodisiac properties. They also help control blood pressure.</p>
+  </div>
+
+  <div class="leaf moringa">
+    <h2>Moringa (Drumstick Leaves)</h2>
+    <div class="image-box">
+      <img src="https://healthjade.net/wp-content/uploads/2021/03/moringa-oleifera.jpg" style="width:300px;height:300px" alt="Moringa Leaf">
+    </div>
+    <p>Moringa is known as a superfood due to its dense nutrient content.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Moringa is rich in calcium, iron, potassium, and protein. It boosts immunity, improves skin health, balances hormones, reduces cholesterol, and fights free radicals.</p>
+  </div>
+
+  <div class="leaf guava">
+    <h2>Guava Leaves</h2>
+    <div class="image-box">
+      <img src="https://parentinghealthybabies.com/app/phb-data/uploads/2019/01/guava-leaves.jpg" style="width:300px;height:300px" alt="Guava Leaves">
+    </div>
+    <p>Guava leaves are a hidden treasure in natural remedies.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">They help in treating diarrhea, lower blood sugar, reduce acne and dark spots, relieve menstrual pain, and promote healthy hair growth. Guava leaves also have antimicrobial properties.</p>
+  </div>
+
+  <div class="leaf aloe">
+    <h2>Aloe Vera Leaf</h2>
+    <div class="image-box">
+      <img src="https://thumbs.dreamstime.com/z/aloe-vera-fresh-leaf-aloe-vera-farm-garden-natural-background-aloe-vera-fresh-leaf-aloe-vera-farm-garden-natural-118962032.jpg" style="width:300px;height:300px" alt="Aloe Vera Leaf">
+    </div>
+    <p>Aloe vera is a succulent known for its soothing and hydrating gel.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Aloe vera hydrates skin, heals burns, treats constipation, lowers blood sugar, and boosts collagen production. It's used in skincare, haircare, and internal detox treatments.</p>
+  </div>
+
+  <div class="leaf henna" style="background-color: #f0fdf4;">
+    <h2>Henna (Mehndi)</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.KFhQ85fe2iV3bof4s19nbQHaHa?rs=1&pid=ImgDetMain" alt="Henna Leaves">
+    </div>
+    <p>Henna, also known as Mehndi, is a traditional plant known for its natural dye and medicinal properties.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Henna leaves are widely used as a natural dye for hair and skin. They have antimicrobial, antifungal, and anti-inflammatory properties. Henna cools the body, soothes burns, treats dandruff, strengthens hair, and reduces scalp irritation. In traditional medicine, it is also used to heal wounds and control excessive sweating. When applied to the feet, henna helps in reducing body heat and improves sleep. The antioxidants in henna also support skin health and help relieve joint pain when applied externally.</p>
+  </div>
+  
+
+  <a href="index.html" class="back">← Back to Home</a>
+
+  <script>
+    function toggleBenefit(button) {
+      const benefit = button.nextElementSibling;
+      benefit.style.display = benefit.style.display === 'block' ? 'none' : 'block';
+      button.textContent = benefit.style.display === 'block' ? 'Hide Benefit' : 'Show Benefit';
+    }
+  </script>
+</body>
+</html>

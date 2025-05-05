@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flowers</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe1f0, #e0c3fc);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      color: #4a2c57;
+    }
+    h1 {
+      text-align: center;
+      color: #862d86;
+      font-size: 3em;
+    }
+    .logo {
+      text-align: center;
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .flower {
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 6px 14px rgba(138, 43, 226, 0.2);
+    }
+    .flower h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .image-box {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .image-box img {
+      width: 300px;
+      border-radius: 12px;
+    }
+    .show-btn {
+      background-color: #b437f2;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .benefit {
+      display: none;
+      margin-top: 15px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+    .rose { background-color: #ffe6ec; }
+    .lotus { background-color: #e6f7ff; }
+    .lavender { background-color: #f3e5f5; }
+    .hibiscus { background-color: #ffe4e1; }
+    .marigold { background-color: #fff8dc; }
+    .jasmine { background-color: #fdfdf0; }
+    .sunflower { background-color: #ffecb3; }
+    .orchid { background-color: #f9d1f2; }
+    .lily { background-color: #f0f8ff; }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+      color: #5e1b5e;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo"></div>
+  
+    </div>
+  <h1>Flowers and its Benefits</h1>
+
+  <div class="flower tulip" style="background-color: #ffe0f0;">
+    <h2>Tulip</h2>
+    <div class="image-box">
+      <img src="https://i.pinimg.com/originals/7c/2f/d8/7c2fd831422754c966d953388106d283.jpg" style="width:300px;" alt="Tulip">
+    </div>
+    <p>Tulips are spring-blooming perennials known for their bold colors and classic cup-shaped flowers. They symbolize love, forgiveness, and renewal.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Tulip petals are rich in antioxidants and known to have natural soothing and anti-inflammatory properties. Tulip extracts are used in luxury skin care to hydrate and refresh skin. Their fragrance can also lift mood and reduce mental fatigue. Additionally, tulips are considered natural air purifiers, enhancing indoor spaces.</p>
+  </div>
+  
+  <div class="flower chamomile" style="background-color: #f8f5e1;">
+    <h2>Chamomile</h2>
+    <div class="image-box">
+      <img src="https://a-z-animals.com/media/2022/09/shutterstock_2053752875.jpg" style="width:300px;" alt="Chamomile">
+    </div>
+    <p>Chamomile is a small, daisy-like flower known for its calming properties and widely used in herbal teas and aromatherapy.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Chamomile helps reduce stress, promote better sleep, and relieve digestive issues. It's commonly used to soothe skin irritations, reduce menstrual cramps, and enhance relaxation through its mild sedative effects. Drinking chamomile tea before bed can improve sleep quality and lower inflammation in the body.</p>
+  </div>
+  <div class="flower rose">
+    <h2>Rose</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.AncWY0XRFAC69E_EEcDI7wHaHa?rs=1&pid=ImgDetMain" alt="Rose">
+    </div>
+    <p>Roses are iconic for their beauty, romance, and fragrance. They have been cultivated for thousands of years and are widely used in perfumes, cosmetics, and symbolic art.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Rose petals are packed with antioxidants and have natural anti-inflammatory effects. They help soothe skin irritation, reduce anxiety, and enhance hydration when consumed or applied topically. Rose water is widely used to refresh and tone the skin while its fragrance reduces stress hormones. Roses are also great for heart health and can help improve blood circulation.</p>
+  </div>
+
+  <div class="flower lotus">
+    <h2>Lotus</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.E3UNwm389l_qdOdJ6zbhCAHaE8?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Lotus">
+    </div>
+    <p>The lotus is a symbol of purity and spiritual awakening. It grows in muddy water, yet blooms clean and beautiful — a metaphor for rising above challenges in life.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Lotus extract has powerful hydrating and anti-aging properties. It boosts elasticity, calms inflammation, and promotes radiant skin. It also helps regulate body temperature, reduce stress, and improve mental clarity. Lotus seeds are also edible and are considered a superfood. The roots are also used in traditional medicine for improving kidney and liver function.</p>
+  </div>
+
+  <div class="flower lavender">
+    <h2>Lavender</h2>
+    <div class="image-box">
+      <img src="https://cdn11.bigcommerce.com/s-c49b6/images/stencil/2560w/products/19/3458/English_Lavender_Seeds_Lavandula_Angustifolia__56163.1566712513.jpg?c=2" style="width:300px;height:300px" alt="Lavender">
+    </div>
+    <p>Lavender is beloved for its soothing aroma and soft violet hue. Its calming properties are used in aromatherapy, skincare, and herbal remedies.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Lavender helps reduce anxiety, tension, and insomnia. Its antiseptic and anti-inflammatory qualities support healing of minor burns, cuts, and insect bites. Lavender oil in bath or pillow sprays can improve sleep and relax the mind, while also reducing headaches and migraines naturally. Lavender also supports digestive health and can alleviate nausea and upset stomachs.</p>
+  </div>
+
+  <div class="flower hibiscus">
+    <h2>Hibiscus</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.w9G82X7-bWxeAcz6u9UW2gHaE7?w=246&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="width:300px;height:300px" alt="Hibiscus">
+    </div>
+    <p>Hibiscus flowers are known for their vibrant colors and large blossoms. They are popular in teas and hair care routines.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Hibiscus supports heart health by managing cholesterol and blood pressure. Its antioxidants combat free radicals and slow aging. In hair care, hibiscus strengthens roots, encourages growth, and reduces dandruff. The flower also acts as a mild laxative and detoxifier when consumed as tea. Hibiscus tea is known to boost metabolism and assist in weight loss.</p>
+  </div>
+
+  <div class="flower marigold">
+    <h2>Marigold</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.ZZaALks-qNg07WG_7T05EgHaFp?rs=1&pid=ImgDetMain" style="width:300px;height:300px" alt="Marigold">
+    </div>
+    <p>Marigolds are cheerful yellow-orange blooms often used in rituals and natural pest control. Their petals are also edible and medicinal.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Marigold (calendula) is known for its antifungal and healing properties. It's used in salves for cuts, burns, rashes, and acne. Calendula tea soothes an upset stomach, while the flower's extracts help brighten dull skin and fight infections. Marigold also helps in reducing inflammation and providing relief for sore throats.</p>
+  </div>
+
+  <div class="flower bluebell" style="background-color: #e0f7fa;">
+    <h2>Bluebell</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP._r7Q12cH9fNTZuZfjvvP2QHaFj?rs=1&pid=ImgDetMain" style="width:300px;" alt="Bluebell">
+    </div>
+    <p>Bluebells are charming, bell-shaped blue flowers that grow in woodlands and symbolize humility and gratitude.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Bluebells contain compounds that support memory and brain health. Historically, they’ve been used in wound healing and to prevent infections. Their gentle aroma also creates a calming environment that promotes mindfulness and inner peace. Bluebell essence is also used in emotional therapies to restore balance and joy.</p>
+  </div>
+
+  <div class="flower jasmine">
+    <h2>Jasmine</h2>
+    <div class="image-box">
+      <img src="https://5.imimg.com/data5/PJ/WO/AQ/SELLER-38773420/pink-roses-1000x1000.jpg" style="width:300px;height:300px" alt="Jasmine">
+    </div>
+    <p>Jasmine's white blossoms release a sweet aroma that fills the night. It is widely used in essential oils, incense, and tea.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Jasmine improves mood, reduces depression symptoms, and supports hormonal balance. It promotes healthy skin and hair, especially in oil form. Inhaling its scent may boost cognitive performance, and jasmine tea supports weight loss and immunity. The anti-inflammatory properties help to reduce stress and alleviate joint pain when applied topically.</p>
+  </div>
+
+  <div class="flower peony" style="background-color: #fce4ec;">
+    <h2>Peony</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/OIP.r242mvn9OI34srgxmcyoNgHaE7?rs=1&pid=ImgDetMain" style="width:300px;" alt="Peony">
+    </div>
+    <p>Peonies are lush, fragrant flowers that bloom in late spring. They symbolize good fortune, prosperity, and a happy marriage in many cultures.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Peonies have natural anti-inflammatory and antioxidant properties that help in managing arthritis and improving skin tone. Peony root extract is used in Chinese medicine to treat liver problems, balance hormones, and ease menstrual discomfort. Their scent is also known to relax the mind and reduce stress.</p>
+  </div>
+
+  <div class="flower sunflower">
+    <h2>Sunflower</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/R.7bd78de2e9a16242e2e7c748c74b6a1a?rik=JE0ZLvsQxkRTcw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-EvQYk5Z2ISQ%2fTV1Y6C9VAlI%2fAAAAAAAAADA%2f0PviOUYUjU8%2fs1600%2fSunflower.jpg&ehk=BBsZwBo55K%2f7N3Zj3yzAkLsaw91mTVc0DD7QDg0rfxE%3d&risl=&pid=ImgRaw&r=0" style="width:300px;height:300px"alt="Sunflower">
+    </div>
+    <p>Sunflowers are well known for their large, bright yellow petals and their ability to track the sun. They're not only beautiful but also provide numerous seeds and oil used in food products.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Sunflower seeds are rich in vitamin E, antioxidants, and healthy fats, which help lower cholesterol and promote heart health. The oil is great for moisturizing the skin, and the seeds are often used in snack bars, granola, and baked goods. Sunflowers also act as natural air purifiers by absorbing pollutants from the air.</p>
+  </div>
+
+  <div class="flower daffodil" style="background-color: redhttps://th.bing.com/th/id/R.6b72ab298b10319b407852772c444a97?rik=7d%2bvKgKWnefwKg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-7dGQHY0QYrw%2fUDiYkdpIw5I%2fAAAAAAAAAx0%2fLDW9ov14sKs%2fs1600%2fNarcissus-(Daffodil)-3.jpg&ehk=1nRviRaoKpZ9g5uPAJB%2f8zYiO8NUslA9tdaFvF51SUA%3d&risl=&pid=ImgRaw&r=0https://th.bing.com/th/id/R.6b72ab298b10319b407852772c444a97?rik=7d%2bvKgKWnefwKg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-7dGQHY0QYrw%2fUDiYkdpIw5I%2fAAAAAAAAAx0%2fLDW9ov14sKs%2fs1600%2fNarcissus-(Daffodil)-3.jpg&ehk=1nRviRaoKpZ9g5uPAJB%2f8zYiO8NUslA9tdaFvF51SUA%3d&risl=&pid=ImgRaw&r=0https://th.bing.com/th/id/R.6b72ab298b10319b407852772c444a97?rik=7d%2bvKgKWnefwKg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-7dGQHY0QYrw%2fUDiYkdpIw5I%2fAAAAAAAAAx0%2fLDW9ov14sKs%2fs1600%2fNarcissus-(Daffodil)-3.jpg&ehk=1nRviRaoKpZ9g5uPAJB%2f8zYiO8NUslA9tdaFvF51SUA%3d&risl=&pid=ImgRaw&r=0https://th.bing.com/th/id/R.6b72ab298b10319b407852772c444a97?rik=7d%2bvKgKWnefwKg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-7dGQHY0QYrw%2fUDiYkdpIw5I%2fAAAAAAAAAx0%2fLDW9ov14sKs%2fs1600%2fNarcissus-(Daffodil)-3.jpg&ehk=1nRviRaoKpZ9g5uPAJB%2f8zYiO8NUslA9tdaFvF51SUA%3d&risl=&pid=ImgRaw&r=0;">
+    <h2>Daffodil</h2>
+    <div class="image-box">
+      <img src="https://th.bing.com/th/id/R.6b72ab298b10319b407852772c444a97?rik=7d%2bvKgKWnefwKg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-7dGQHY0QYrw%2fUDiYkdpIw5I%2fAAAAAAAAAx0%2fLDW9ov14sKs%2fs1600%2fNarcissus-(Daffodil)-3.jpg&ehk=1nRviRaoKpZ9g5uPAJB%2f8zYiO8NUslA9tdaFvF51SUA%3d&risl=&pid=ImgRaw&r=0" style="width:300px;" alt="Daffodil">
+    </div>
+    <p>Daffodils are bright yellow flowers that bloom in early spring, symbolizing new beginnings, hope, and renewal.</p>
+    <button class="show-btn" onclick="toggleBenefit(this)">Show Benefit</button>
+    <p class="benefit">Daffodils contain compounds such as galantamine, which is used in medications to treat Alzheimer’s disease by improving memory and cognitive function. They are also believed to have mood-lifting effects due to their cheerful appearance and association with spring. In traditional medicine, daffodil extracts have been explored for treating wounds and respiratory issues. Culturally, they are often used in
+  
+
+
+
+  
+  
+  
+  
+  
+
+  <a href="index.html" class="back">← Back to Home</a>
+
+  <script>
+    function toggleBenefit(button) {
+      const benefit = button.nextElementSibling;
+      benefit.style.display = benefit.style.display === 'block' ? 'none' : 'block';
+      button.textContent = benefit.style.display === 'block' ? 'Hide Benefit' : 'Show Benefit';
+    }
+  </script>
+
+</body>
